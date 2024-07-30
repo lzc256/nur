@@ -16,17 +16,16 @@ buildGoModule rec {
     owner = "ArtalkJS";
     repo = "artalk";
     rev = "refs/tags/v${version}";
-    # hash = "sha256-fOuZiFomXGvRUXkpEM3BpJyMOtSm6/RHd0a7dPOsoT4=";
+    hash = "sha256-fOuZiFomXGvRUXkpEM3BpJyMOtSm6/RHd0a7dPOsoT4=";
   };
   web = fetchurl {
     url = "https://github.com/${src.owner}/${src.repo}/releases/download/v${version}/artalk_ui.tar.gz";
-    # hash = "sha256-3Rg5mCFigLkZ+X8Fxe6A16THd9j6hcTYMEAKU1SrLMw=";
+    hash = "sha256-YZstgjz6q32emKRSC58/TR8OYdSq9gIrE/sS8YMFQLo=";
   };
 
   CGO_ENABLED = 1;
 
   vendorHash = "sha256-Hm388ub/ja3PuSRqPkr6A+pgKUQ+czMj1WKU8W8H5wI=";
-  vendorSha256 = "sha256-YZstgjz6q32emKRSC58/TR8OYdSq9gIrE/sS8YMFQLo=";
 
   ldflags = [
     "-s"
