@@ -1,3 +1,8 @@
+{ config,
+  pkgs,
+  lib,
+  ...
+}:
 let
 #  inherit (lib) mkMerge types;
 #  inherit (lib.modules) mkIf;
