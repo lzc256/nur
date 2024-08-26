@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: let
+let
   inherit (lib) mkMerge types;
   inherit (lib.modules) mkIf;
   inherit (lib.options) mkOption mkEnableOption literalExpression;
