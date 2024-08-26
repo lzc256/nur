@@ -5,9 +5,9 @@
   ...
 }:
 let
-#  inherit (lib) mkMerge types;
-#  inherit (lib.modules) mkIf;
-#  inherit (lib.options) mkOption mkEnableOption literalExpression;
+  inherit (lib) mkMerge types;
+  inherit (lib.modules) mkIf;
+  inherit (lib.options) mkOption mkEnableOption literalExpression;
 
   defaultAgsPackage = pkgs.ags;
   cfg = config.programs.ags;
