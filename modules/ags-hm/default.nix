@@ -1,7 +1,7 @@
 let
-  inherit (lib) mkMerge types;
-  inherit (lib.modules) mkIf;
-  inherit (lib.options) mkOption mkEnableOption literalExpression;
+#  inherit (lib) mkMerge types;
+#  inherit (lib.modules) mkIf;
+#  inherit (lib.options) mkOption mkEnableOption literalExpression;
 
   defaultAgsPackage = packages.${pkgs.stdenv.hostPlatform.system}.default;
   cfg = config.programs.ags;
