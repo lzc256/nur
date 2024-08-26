@@ -16,6 +16,7 @@
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
   artalk = pkgs.callPackage ./pkgs/artalk { };
+  ags = pkgs.callPackage ./pkgs/ags { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
