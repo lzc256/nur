@@ -1,4 +1,5 @@
-{ config,
+{
+  config,
   pkgs,
   lib,
   ...
@@ -8,7 +9,7 @@ let
 #  inherit (lib.modules) mkIf;
 #  inherit (lib.options) mkOption mkEnableOption literalExpression;
 
-  defaultAgsPackage = packages.${pkgs.stdenv.hostPlatform.system}.default;
+  defaultAgsPackage = pkgs.ags;
   cfg = config.programs.ags;
 in {
   options.programs.ags = {
