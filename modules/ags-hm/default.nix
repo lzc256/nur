@@ -9,7 +9,7 @@ let
   inherit (lib.modules) mkIf;
   inherit (lib.options) mkOption mkEnableOption literalExpression;
 
-  defaultAgsPackage = pkgs.ags;
+  defaultAgsPackage = (import ( builtins.fetchTarball "https://github.com/lzc256/nur/archive/master.tar.gz" ) {} ).ags;
   cfg = config.programs.ags;
 in {
   options.programs.ags = {
