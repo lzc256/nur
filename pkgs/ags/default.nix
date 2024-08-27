@@ -42,7 +42,7 @@ in
 
     src = buildNpmPackage {
       name = pname;
-      src = lib.cleanSource fetchFromGithub {
+      src = lib.cleanSource fetchFromGitHub {
         owner = "Aylur";
         repo = "ags";
         rev = "v1.8.2";
