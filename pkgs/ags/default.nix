@@ -46,7 +46,7 @@ in
         owner = "Aylur";
         repo = "ags";
         rev = "v1.8.2";
-        # sha256 = "sha256-bb91f7c8fdd2f51c79d3af3f2881cacbdff19f60";
+        sha256 = "sha256-Ga7MdGc1CA+WwLB7xAEbuzXzGtEM2346kUDvq8ymgJc=";
       };
 
       dontBuild = true;
