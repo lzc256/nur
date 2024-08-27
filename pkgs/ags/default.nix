@@ -3,6 +3,7 @@
   stdenv,
   buildNpmPackage,
   fetchFromGitLab,
+  fetchFromGitHub,
   nodePackages,
   meson,
   pkg-config,
@@ -41,7 +42,7 @@ in
 
     src = buildNpmPackage {
       name = pname;
-      src = lib.cleanSource pkgs.fetchFromGithub {
+      src = lib.cleanSource fetchFromGithub {
         owner = "Aylur";
         repo = "ags";
         rev = "v1.8.2";
