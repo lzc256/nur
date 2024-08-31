@@ -17,6 +17,7 @@
   example-package = pkgs.callPackage ./pkgs/example-package { };
   artalk = pkgs.callPackage ./pkgs/artalk { };
   ags = pkgs.callPackage ./pkgs/ags { };
+  muse-sounds-manager = pkgs.callPackage ./pkgs/muse-sounds-manager { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
