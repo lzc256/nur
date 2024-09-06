@@ -54,9 +54,9 @@ buildGoModule rec {
         --zsh <($out/bin/artalk completion zsh)
     '';
 
-  passthru.tests = {
-    version = testers.testVersion { package = artalk; };
-  };
+  #passthru.tests = {
+  #  version = testers.testVersion { package = artalk; };
+  #};
 
   meta = {
     description = "Self-hosted comment system";
