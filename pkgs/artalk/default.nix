@@ -2,7 +2,7 @@
   lib,
   buildGoModule,
   fetchFromGitHub,
-  artalk,
+ # artalk,
   fetchurl,
   installShellFiles,
   stdenv,
