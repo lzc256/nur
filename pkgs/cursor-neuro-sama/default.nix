@@ -2,7 +2,7 @@
 , fetchzip
 , stdenv
 }:
-stdenv.mkDerivation rec {
+stdenvNoCC.mkDerivation rec {
   pname = "cursor-neuro-sama";
   version = "0.0";
   src = fetchzip {
