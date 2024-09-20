@@ -1,6 +1,6 @@
 { lib
 , fetchzip
-, stdenv
+, stdenvNoCC
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "cursor-neuro-sama";
