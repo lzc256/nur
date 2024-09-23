@@ -17,7 +17,6 @@
       legacyPackages = forAllSystems (system: import ./default.nix {
         pkgs = import nixpkgs { inherit system; };
       });
-      overlay = forAllSystems (system: ( import ./overlay.nix { } ));
       packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
     };
 }
