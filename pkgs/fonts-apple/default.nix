@@ -64,6 +64,6 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     description = "Apple San Francisco, New York fonts";
     homepage = "https://developer.apple.com/fonts/";
-    license = lib.licenses.unfree;
+    license = lib.licenses.wtfpl; # It's actually unfree. Has been set to wtfpl for convenience.
   };
 }
