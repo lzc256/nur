@@ -6,7 +6,9 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs ? import <nixpkgs> { } }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 
 {
   # The `lib`, `modules`, and `overlays` names are special
@@ -20,6 +22,7 @@
   muse-sounds-manager = pkgs.callPackage ./pkgs/muse-sounds-manager { };
   cursor-neuro-sama = pkgs.callPackage ./pkgs/cursor-neuro-sama { };
   fonts-apple = pkgs.callPackage ./pkgs/fonts-apple { };
+  fonts-apple-emoji = pkgs.callPackage ./pkgs/fonts-apple-emoji { };
   clashtui = pkgs.callPackage ./pkgs/clashtui { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
