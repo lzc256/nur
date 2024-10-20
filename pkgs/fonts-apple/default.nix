@@ -1,4 +1,10 @@
-{ lib, stdenvNoCC, fetchurl, unzip, p7zip }:
+{
+  lib,
+  stdenvNoCC,
+  fetchurl,
+  unzip,
+  p7zip,
+}:
 
 stdenvNoCC.mkDerivation rec {
   pname = "apple-fonts";
@@ -64,6 +70,6 @@ stdenvNoCC.mkDerivation rec {
   meta = {
     description = "Apple San Francisco, New York fonts";
     homepage = "https://developer.apple.com/fonts/";
-    license = lib.licenses.wtfpl; # It's actually unfree. Has been set to wtfpl for convenience.
+    license = lib.licenses.unfree;
   };
 }
