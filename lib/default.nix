@@ -6,6 +6,6 @@ with pkgs.lib;
   #
   # hexint = x: hexvals.${toLower x};
 
-  lzc256-overrideDrvAsFree =
-    pkg: (pkg.overrideAttrs (finalAttrs: previousAttrs: { meta.license = lib.licenses.free; }));
+  overrideDrvAsFree =
+    pkg: (pkg.overrideAttrs (finalAttrs: previousAttrs: { meta.license = pkgs.lib.licenses.free; }));
 }
