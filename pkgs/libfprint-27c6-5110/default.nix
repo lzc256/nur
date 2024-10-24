@@ -25,11 +25,18 @@ stdenv.mkDerivation {
   pname = "libfprint-27c6-5110";
   version = "0.0.4";
 
+  # src = fetchFromGitHub {
+  #   owner = "0x00002a";
+  #   repo = "libfprint";
+  #   rev = "0x2a/dev/goodixtls-sigfm";
+  #   hash = "sha256-KqY/1DYq8SELfjHv6GctYL5onmzGSIIEwv2AriSdY1I=";
+  # };
+
   src = fetchFromGitHub {
-    owner = "0x00002a";
+    owner = "goodix-fp-linux-dev";
     repo = "libfprint";
-    rev = "0x2a/dev/goodixtls-sigfm";
-    hash = "sha256-KqY/1DYq8SELfjHv6GctYL5onmzGSIIEwv2AriSdY1I=";
+    rev = "master";
+    hash = "sha256-OMPHqlSxCFpwBoBCgDz1Wo6g4IEBqXWj8AYz5P511mI=";
   };
 
   patchPhase = ''

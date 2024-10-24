@@ -24,7 +24,7 @@
   fonts-apple = pkgs.callPackage ./pkgs/fonts-apple { };
   fonts-apple-emoji = pkgs.callPackage ./pkgs/fonts-apple-emoji { };
   clashtui = pkgs.callPackage ./pkgs/clashtui { };
-  libfprint-27c6-5110 = pkgs.callPackage ./pkgs/libfprint-27c6-5510 { };
+  libfprint-27c6-5110 = pkgs.callPackage ./pkgs/libfprint-27c6-5110 { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
