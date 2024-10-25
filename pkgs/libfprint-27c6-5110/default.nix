@@ -36,7 +36,7 @@ stdenv.mkDerivation {
     owner = "goodix-fp-linux-dev";
     repo = "libfprint";
     rev = "goodixtls";
-    hash = "sha256-OMPHqlSxCFpwBoBCgDz1Wo6g4IEBqXWj8AYz5P511mI=";
+    hash = "sha256-6llzCeVOtv0HRaNdB8mMzZCA8RBZtGkSCErsXwKE/vk=";
   };
 
   patchPhase = ''
