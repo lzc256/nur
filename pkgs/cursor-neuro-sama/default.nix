@@ -1,12 +1,13 @@
-{ lib
-, fetchzip
-, stdenvNoCC
+{
+  lib,
+  fetchzip,
+  stdenvNoCC,
 }:
-stdenvNoCC.mkDerivation rec {
+stdenvNoCC.mkDerivation {
   pname = "cursor-neuro-sama";
   version = "0.0";
   src = fetchzip {
-    url = "https://raw.githubusercontent.com/lzc256/nur/Neuro-sama.tar.gz";
+    url = "https://github.com/lzc256/nur/raw/refs/heads/master/res/Neuro-sama.tar.gz";
     hash = "sha256-g0s/6rR7gCKWM678EBSLa37OBR+cFJORjFXkiGFqs6U=";
   };
 
