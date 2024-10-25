@@ -35,7 +35,7 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "goodix-fp-linux-dev";
     repo = "libfprint";
-    rev = "master";
+    rev = "goodixtls";
     hash = "sha256-OMPHqlSxCFpwBoBCgDz1Wo6g4IEBqXWj8AYz5P511mI=";
   };
 
