@@ -23,21 +23,21 @@
 
 stdenv.mkDerivation {
   pname = "libfprint-27c6-5110";
-  version = "0.0.4";
-
-  # src = fetchFromGitHub {
-  #   owner = "0x00002a";
-  #   repo = "libfprint";
-  #   rev = "0x2a/dev/goodixtls-sigfm";
-  #   hash = "sha256-KqY/1DYq8SELfjHv6GctYL5onmzGSIIEwv2AriSdY1I=";
-  # };
+  version = "qwq-0";
 
   src = fetchFromGitHub {
-    owner = "goodix-fp-linux-dev";
+    owner = "0x00002a";
     repo = "libfprint";
-    rev = "goodixtls";
-    hash = "sha256-6llzCeVOtv0HRaNdB8mMzZCA8RBZtGkSCErsXwKE/vk=";
+    rev = "0x2a/dev/goodixtls-sigfm";
+    hash = "sha256-KqY/1DYq8SELfjHv6GctYL5onmzGSIIEwv2AriSdY1I=";
   };
+
+  # src = fetchFromGitHub {
+  #   owner = "goodix-fp-linux-dev";
+  #   repo = "libfprint";
+  #   rev = "goodixtls";
+  #   hash = "sha256-6llzCeVOtv0HRaNdB8mMzZCA8RBZtGkSCErsXwKE/vk=";
+  # };
 
   patchPhase = ''
     # sed -i "4c       value: 'all')" ./meson_options.txt
