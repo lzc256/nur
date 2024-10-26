@@ -25,6 +25,7 @@
   fonts-apple-emoji = pkgs.callPackage ./pkgs/fonts-apple-emoji { };
   clashtui = pkgs.callPackage ./pkgs/clashtui { };
   libfprint-27c6-5110 = pkgs.callPackage ./pkgs/libfprint-27c6-5110 { };
+  mihomo-party = pkgs.callPackage ./pkgs/mihomo-party { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
