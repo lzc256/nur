@@ -7,5 +7,5 @@ with pkgs.lib;
   # hexint = x: hexvals.${toLower x};
 
   overrideDrvAsFree =
-    pkg: (pkg.overrideAttrs (finalAttrs: previousAttrs: { meta.license = pkgs.lib.licenses.free; }));
+    pkg: (pkg.overrideAttrs (finalAttrs: previousAttrs: { meta.license = licenses.free; }));
 }
