@@ -26,6 +26,8 @@
   clashtui = pkgs.callPackage ./pkgs/clashtui { };
   libfprint-27c6-5110 = pkgs.callPackage ./pkgs/libfprint-27c6-5110 { };
   mihomo-party = pkgs.callPackage ./pkgs/mihomo-party { };
+  kwin-gestures = pkgs.kdePackages.callPackage ./pkgs/kwin-gestures { };
+  kwin-effects-geometry-change = pkgs.callPackage ./pkgs/kwin-effects-geometry-change { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
