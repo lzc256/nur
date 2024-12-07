@@ -13,6 +13,8 @@ stdenvNoCC.mkDerivation rec {
     sha256 = "sha256-SG3JQLybhY/fMX+XqmB/BKhQSBB0N1VRqa+H6laVUPE=";
   };
 
+  preferLocalBuild = true;
+
   sourceRoot = ".";
 
   dontUnpack = true;

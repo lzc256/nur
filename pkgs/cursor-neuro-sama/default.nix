@@ -11,6 +11,8 @@ stdenvNoCC.mkDerivation {
     hash = "sha256-g0s/6rR7gCKWM678EBSLa37OBR+cFJORjFXkiGFqs6U=";
   };
 
+  preferLocalBuild = true;
+
   installPhase = ''
     mkdir -p $out/share/icons
     cp -r . $out/share/icons/cursor-neuro-sama

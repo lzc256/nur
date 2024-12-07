@@ -2,7 +2,6 @@
   lib,
   stdenvNoCC,
   fetchurl,
-  unzip,
   p7zip,
 }:
 
@@ -29,6 +28,8 @@ stdenvNoCC.mkDerivation rec {
     url = "https://devimages-cdn.apple.com/design/resources/download/NY.dmg";
     sha256 = "sha256-HC7ttFJswPMm+Lfql49aQzdWR2osjFYHJTdgjtuI+PQ=";
   };
+
+  preferLocalBuild = true;
 
   nativeBuildInputs = [ p7zip ];
 
