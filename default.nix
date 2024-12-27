@@ -28,6 +28,7 @@
   mihomo-party = pkgs.callPackage ./pkgs/mihomo-party { };
   kwin-gestures = pkgs.kdePackages.callPackage ./pkgs/kwin-gestures { };
   kwin-effects-geometry-change = pkgs.callPackage ./pkgs/kwin-effects-geometry-change { };
+  flameshot = pkgs.callPackage ./pkgs/flameshot { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
