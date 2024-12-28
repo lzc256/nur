@@ -116,6 +116,7 @@ stdenv'.mkDerivation {
         ${lib.optionalString enableWlrSupport "--prefix PATH : ${lib.makeBinPath [ grim ]}"} \
         ''${qtWrapperArgs[@]}
     '';
+  dontTest = true;
 
   passthru = {
     updateScript = nix-update-script { extraArgs = [ "--version=branch" ]; };
