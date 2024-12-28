@@ -14,7 +14,7 @@
   openssl,
   libgudev,
   gobject-introspection,
-  gnome2,
+  gtk-doc,
   opencv,
   doctest,
   libfprint-tod,
@@ -54,7 +54,7 @@ stdenv.mkDerivation {
     ninja
     pkg-config
     cmake
-    gnome2.gtk-doc
+    gtk-doc
     doctest
   ];
   buildInputs = [
